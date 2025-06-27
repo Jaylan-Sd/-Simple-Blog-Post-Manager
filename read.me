@@ -1,0 +1,108 @@
+# 📝 Blog Post Manager
+
+A simple web application to manage blog posts.  
+Built with HTML, CSS, and vanilla JavaScript.  
+Uses a local mock API powered by json-server.
+
+---
+
+## 📚 Learning Goals
+
+- Access information from an API using GET requests and update the DOM
+- Listen for user events and update the DOM in response
+- (Advanced) Send data to an API using POST, PATCH, and DELETE requests
+
+---
+
+## 🚀 Features
+
+- View a list of blog post titles
+- Click a title to see post details (title, content, author)
+- Add a new post using a form
+- Show first post details automatically on page load (Advanced)
+- Edit an existing post's title and content (Advanced)
+- Delete a post (Advanced)
+- Persist changes to the backend using POST, PATCH, and DELETE (Extra Advanced)
+
+---
+
+## ⚙ Setup Instructions
+
+1. Install json-server globally:
+   ```bash
+   npm install -g json-server@0.17.4
+Add sample data to db.json:
+
+json
+Copy
+Edit
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Hello World",
+      "content": "This is my first blog post!",
+      "author": "Alice"
+    }
+  ]
+}
+Start the json-server:
+
+bash
+Copy
+Edit
+json-server db.json
+The API will be available at: http://localhost:3000
+
+Open the frontend:
+
+Install live-server if you don’t have it:
+
+bash
+Copy
+Edit
+npm install -g live-server
+Then run:
+
+bash
+Copy
+Edit
+live-server
+Or just open index.html manually in your browser.
+
+📁 Project Structure
+pgsql
+Copy
+Edit
+Blog Post Manager/
+├── db.json
+├── index.html
+├── css/
+│   └── styles.css
+└── src/
+    └── index.js
+✏ Usage
+On page load, the list of post titles appears.
+
+Clicking a title shows the post details.
+
+Fill out and submit the form to add a new post.
+
+Use the Edit and Delete buttons in the post detail view to update or remove a post.
+
+✅ Completed Deliverables
+Load and display posts from API
+
+Handle user events to view details and add new posts
+
+Update and delete posts (Advanced)
+
+Persist data using POST, PATCH, DELETE requests (Extra Advanced)
+
+📌 Notes
+Make sure json-server is running on port 3000 before using the app.
+
+Run live-server (or open index.html) from the folder that contains it.
+
+🧑‍💻 Author
+Created as part of a JavaScript learning challenge.
